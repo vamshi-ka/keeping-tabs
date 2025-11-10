@@ -1,0 +1,24 @@
+# API credentials - NEVER commit these!
+.env
+
+# Build artifacts
+web-ext-artifacts/
+*.xpi
+*.zip
+
+# web-ext metadata
+.amo-upload-uuid
+.web-extension-id
+
+# Personal notes
+actions.md
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
