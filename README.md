@@ -5,6 +5,7 @@ A lightweight Firefox extension that automatically numbers your unpinned tabs an
 ## Personal Note
 
 ```
+- Specifically built for zen browser.
 - Why I built this? I was frustrated that pinned tabs just took up the first numbers 1 through 8 for tab navigation.
 - And I wanted something to switch tabs easily without taking my fingers off the keyboard.
 - Hence, this was built for my personal use. I thought maybe if someone else is also facing this frustration, they can use this. 
