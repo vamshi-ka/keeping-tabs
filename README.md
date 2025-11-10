@@ -2,6 +2,18 @@
 
 A lightweight Firefox extension that automatically numbers your unpinned tabs and enables lightning-fast keyboard navigation.
 
+## Personal Note
+
+```
+- Why I built this? I was frustrated that pinned tabs just took up the first numbers 1 through 8 for tab navigation.
+- And I wanted something to switch tabs easily without taking my fingers off the keyboard.
+- Hence, this was built for my personal use. I thought maybe if someone else is also facing this frustration, they can use this. 
+- Makes my life so so easy, I can easily navigate by looking at the tab and just hitting the number.
+- I am not an expert at JS or understanding firefox extensions, I used the general logic of event listeners to get what I want through Claude code
+- Only this Personal Note section is not Claude code generated. So feel free to take this and do whatever you want with it and help me add features.
+- Another important Prerequisite - Touch Typing
+```
+
 ## Features
 
 - **Automatic Tab Numbering**: Numbers unpinned tabs 1-9 for easy identification
@@ -13,9 +25,11 @@ A lightweight Firefox extension that automatically numbers your unpinned tabs an
 ## Installation
 
 ### From Mozilla Add-ons (Recommended)
+
 Coming soon!
 
 ### Manual Installation
+
 1. Download the latest `.xpi` file from [Releases](../../releases)
 2. Open Firefox and go to `about:addons`
 3. Click the gear icon (⚙️) in the top right
@@ -23,6 +37,7 @@ Coming soon!
 5. Select the downloaded `.xpi` file
 
 ### From Source
+
 1. Clone this repository
 2. Open Firefox and go to `about:debugging#/runtime/this-firefox`
 3. Click "Load Temporary Add-on"
@@ -31,6 +46,7 @@ Coming soon!
 ## Usage
 
 ### Tab Numbering
+
 Once installed, the extension automatically prepends `[N]` to the titles of your first 9 unpinned tabs:
 
 ```
@@ -42,10 +58,12 @@ Once installed, the extension automatically prepends `[N]` to the titles of your
 ### Keyboard Shortcuts
 
 **Unpinned Tabs:**
+
 - `Cmd+1` (Mac) or `Ctrl+1` (Windows/Linux) - Go to tab 1
 - `Cmd+2` through `Cmd+9` - Go to tabs 2-9
 
 **Pinned Tabs:**
+
 - `Cmd+Option+1` (Mac) or `Ctrl+Alt+1` (Windows/Linux) - Go to pinned tab 1
 - `Cmd+Option+2` through `Cmd+Option+9` - Go to pinned tabs 2-9
 
@@ -58,6 +76,7 @@ Once installed, the extension automatically prepends `[N]` to the titles of your
 Modern browsing often involves juggling multiple tabs. Built-in browser shortcuts (`Cmd+1`, `Cmd+2`, etc.) navigate to tabs by absolute position, including pinned tabs, which can be confusing when you have many pinned tabs.
 
 **Keeping Tabs** solves this by:
+
 - Clearly numbering only your active working tabs (unpinned)
 - Providing separate navigation for pinned tabs
 - Updating numbers dynamically as you work
@@ -71,6 +90,7 @@ Modern browsing often involves juggling multiple tabs. Built-in browser shortcut
 - **Architecture**: Background script with event-driven tab management
 
 ### How It Works
+
 1. Monitors tab events (create, remove, move, pin/unpin, title changes)
 2. Filters unpinned tabs and numbers the first 9
 3. Injects JavaScript to modify `document.title` on each page
@@ -79,10 +99,12 @@ Modern browsing often involves juggling multiple tabs. Built-in browser shortcut
 ## Development
 
 ### Prerequisites
+
 - Node.js and npm
 - `web-ext` CLI tool: `npm install -g web-ext`
 
 ### Building
+
 ```bash
 # Set up API credentials in .env file
 echo "WEB_EXT_API_KEY=your-key" > .env
@@ -93,6 +115,7 @@ echo "WEB_EXT_API_SECRET=your-secret" >> .env
 ```
 
 ### Testing
+
 ```bash
 # Load as temporary extension
 web-ext run
@@ -104,7 +127,9 @@ web-ext run
 ```
 
 ### Debug Mode
+
 To enable debug logging, edit `background.js`:
+
 ```javascript
 const DEBUG = true;  // Set to false for production
 ```
