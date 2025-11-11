@@ -72,9 +72,11 @@ Once installed, the extension automatically prepends `[N]` to the titles of your
 
 Watch the extension in action:
 
-https://github.com/vamshi-ka/keeping-tabs/assets/demo.mov
+https://github.com/vamshi-ka/keeping-tabs/assets/demo.mp4
 
-[Download demo video](./media/demo.mov)
+<video src="https://github.com/vamshi-ka/keeping-tabs/raw/main/media/demo.mp4" controls></video>
+
+[Download demo video](./media/demo.mp4)
 
 ## Why Keeping Tabs?
 
