@@ -1,0 +1,15 @@
+# Exclude from build package
+sign.sh
+.env
+.gitignore
+.git/
+.web-ext-ignore
+web-ext-artifacts/
+media/
+README.md
+LICENSE
+CLAUDE.md
+AMO_SUBMISSION.md
+actions.md
+.amo-upload-uuid
+.web-extension-id

@@ -8,8 +8,16 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "{2f2997f3-d6b8-4882-8c44-4f66c8a337c0}"
+      "id": "keeping-tabs@vamshi-ka.github.io",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
+  },
+
+  "developer": {
+    "name": "Vamshi Kodipaka",
+    "url": "https://github.com/vamshi-ka"
   },
 
   "icons": {
