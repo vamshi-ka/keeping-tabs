@@ -3,6 +3,8 @@
   "name": "Keeping Tabs",
   "version": "1.2",
   "description": "Smart tab numbering and keyboard navigation for unpinned tabs",
+  "author": "Vamshi Kodipaka",
+  "homepage_url": "https://github.com/vamshi-ka/keeping-tabs",
 
   "browser_specific_settings": {
     "gecko": {
