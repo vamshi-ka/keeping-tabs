@@ -1,6 +1,7 @@
 # Mozilla Add-ons (AMO) Submission Guide
 
 ## Package Ready for Upload
+
 **File:** `web-ext-artifacts/keeping_tabs-1.2.zip`
 
 ---
@@ -8,18 +9,22 @@
 ## Step-by-Step Submission Process
 
 ### 1. Go to Mozilla Add-ons Developer Hub
-Open: https://addons.mozilla.org/developers/
+
+Open: <https://addons.mozilla.org/developers/>
 
 ### 2. Sign In / Create Account
+
 - Use your Firefox Account
 - Accept developer agreement if prompted
 
 ### 3. Click "Submit a New Add-on"
 
 ### 4. Distribution Method
+
 - Select: **"On this site"** (listed on AMO)
 
 ### 5. Upload Your Add-on
+
 - Click "Select a file"
 - Navigate to: `/Users/vamshikodipaka/Documents/01 Projects/keeping-tabs/web-ext-artifacts/keeping_tabs-1.2.zip`
 - Upload the file
@@ -32,21 +37,25 @@ Open: https://addons.mozilla.org/developers/
 ### Basic Information
 
 **Name:**
+
 ```
 Keeping Tabs
 ```
 
 **Add-on URL (slug):**
+
 ```
 keeping-tabs
 ```
 
 **Summary** (250 characters max):
+
 ```
 Automatic tab numbering (1-9) and keyboard navigation for unpinned tabs. Jump to any tab instantly with Cmd+1-9. Built specifically for Zen Browser users who want lightning-fast tab switching.
 ```
 
 **Description:**
+
 ```
 **Keeping Tabs** is a lightweight Firefox extension that automatically numbers your unpinned tabs and enables lightning-fast keyboard navigation.
 
@@ -86,9 +95,11 @@ Once installed, the extension runs in the background and:
 
 Example:
 ```
+
 [1] GitHub - Your Repos
 [2] Stack Overflow - Questions
 [3] MDN Web Docs
+
 ```
 
 ## Perfect For
@@ -133,12 +144,14 @@ Built with ☕ by Vamshi Kodipaka using Claude Code.
 ### Categories
 
 Select these categories:
+
 - ✅ **Tabs**
 - ✅ **Productivity**
 
 ### Tags
 
 Add these tags (comma-separated):
+
 ```
 tabs, keyboard, navigation, shortcuts, productivity, zen-browser, tab-management, firefox
 ```
@@ -146,16 +159,19 @@ tabs, keyboard, navigation, shortcuts, productivity, zen-browser, tab-management
 ### Support Information
 
 **Support Email:**
+
 ```
 [YOUR EMAIL HERE - use your personal or create a project email]
 ```
 
 **Support Website:**
+
 ```
 https://github.com/vamshi-ka/keeping-tabs/issues
 ```
 
 **Homepage:**
+
 ```
 https://github.com/vamshi-ka/keeping-tabs
 ```
@@ -163,6 +179,7 @@ https://github.com/vamshi-ka/keeping-tabs
 ### License
 
 **License:**
+
 ```
 MIT License
 ```
@@ -173,11 +190,13 @@ Already included in your package (LICENSE file)
 ### Privacy Policy
 
 **Do you have a privacy policy?**
+
 ```
 No (extension doesn't collect data)
 ```
 
 Or if they require one:
+
 ```
 This extension does not collect, store, or transmit any user data. It operates entirely locally within your browser to number tabs. No analytics, tracking, or network requests are made.
 ```
@@ -187,17 +206,20 @@ This extension does not collect, store, or transmit any user data. It operates e
 You'll need to upload screenshots or your demo GIF:
 
 **Option 1: Upload demo.gif**
+
 - Navigate to: `/Users/vamshikodipaka/Documents/01 Projects/keeping-tabs/media/demo.gif`
 - Caption: "Keeping Tabs in action - automatic numbering and keyboard navigation"
 
 **Option 2: Take screenshots**
 If GIF doesn't work, take a few screenshots showing:
+
 1. Numbered tabs in the browser
 2. Keyboard shortcuts in action
 
 ### Version Notes (for reviewers)
 
 **Release Notes for v1.2:**
+
 ```
 Initial public release with core features:
 - Automatic tab numbering (1-9)
@@ -210,6 +232,7 @@ Built for personal use, specifically for Zen Browser with many pinned tabs. Open
 ```
 
 **Notes to Reviewer:**
+
 ```
 This extension modifies tab titles locally to add numbers. It requires "tabs" and "<all_urls>" permissions to:
 - Monitor tab events (create, close, move)
@@ -232,8 +255,9 @@ No data collection or external network requests. Code is fully auditable on GitH
 ## Need Help?
 
 If you get stuck:
-1. Check the AMO Developer Guide: https://extensionworkshop.com/documentation/publish/
-2. Review their policies: https://extensionworkshop.com/documentation/publish/add-on-policies/
+
+1. Check the AMO Developer Guide: <https://extensionworkshop.com/documentation/publish/>
+2. Review their policies: <https://extensionworkshop.com/documentation/publish/add-on-policies/>
 3. Ask me for help!
 
 Good luck! 🚀

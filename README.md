@@ -1,5 +1,7 @@
 # Keeping Tabs
 
+[![Mozilla Add-on](https://img.shields.io/amo/v/keeping-tabs?label=Firefox%20Add-on&logo=firefox)](https://addons.mozilla.org/en-US/firefox/addon/keeping-tabs/)
+
 A lightweight Firefox extension that automatically numbers your unpinned tabs and enables lightning-fast keyboard navigation.
 
 ## Personal Note
@@ -27,7 +29,14 @@ A lightweight Firefox extension that automatically numbers your unpinned tabs an
 
 ### From Mozilla Add-ons (Recommended)
 
-Coming soon!
+Install directly from the official Mozilla Add-ons store:
+
+**[Install Keeping Tabs](https://addons.mozilla.org/en-US/firefox/addon/keeping-tabs/)**
+
+1. Click the link above
+2. Click "Add to Firefox"
+3. Confirm the permission request
+4. Start using the extension immediately!
 
 ### Manual Installation
 
