@@ -2,7 +2,7 @@
 
 [![Mozilla Add-on](https://img.shields.io/amo/v/keeping-tabs?label=Firefox%20Add-on&logo=firefox)](https://addons.mozilla.org/en-US/firefox/addon/keeping-tabs/)
 
-A lightweight Firefox extension that automatically numbers your unpinned tabs and enables lightning-fast keyboard navigation.
+A lightweight Firefox extension that automatically numbers both pinned and unpinned tabs with separate visual styles, enabling lightning-fast keyboard navigation.
 
 ## Personal Note
 
@@ -19,11 +19,11 @@ A lightweight Firefox extension that automatically numbers your unpinned tabs an
 
 ## Features
 
-- **Automatic Tab Numbering**: Numbers unpinned tabs 1-9 for easy identification
-- **Keyboard Navigation**: Jump to any tab instantly with `Cmd+1` through `Cmd+9` (Mac) or `Ctrl+1` through `Ctrl+9` (Windows/Linux)
-- **Pinned Tab Support**: Navigate pinned tabs separately with `Cmd+Option+1-9`
+- **Dual Tab Numbering**: Numbers both pinned tabs `(1)-(9)` and unpinned tabs `[1]-[9]` for easy identification
+- **Keyboard Navigation**: Jump to any tab instantly with keyboard shortcuts
+- **Separate Navigation**: Pinned tabs use `Alt+1-9`, unpinned tabs use `Cmd+1-9` (Mac) or `Ctrl+1-9` (Windows/Linux)
 - **Smart Updates**: Tab numbers update automatically when you create, close, or move tabs
-- **Non-Intrusive**: Only numbers the first 9 unpinned tabs to keep things clean
+- **Non-Intrusive**: Only numbers the first 9 tabs of each type to keep things clean
 
 ## Installation
 
@@ -57,8 +57,16 @@ Install directly from the official Mozilla Add-ons store:
 
 ### Tab Numbering
 
-Once installed, the extension automatically prepends `[N]` to the titles of your first 9 unpinned tabs:
+Once installed, the extension automatically numbers your tabs with different styles:
 
+**Pinned tabs** (round brackets):
+```
+(1) Email
+(2) Calendar
+(3) Slack
+```
+
+**Unpinned tabs** (square brackets):
 ```
 [1] GitHub - Your Repos
 [2] Stack Overflow - Questions
@@ -74,8 +82,8 @@ Once installed, the extension automatically prepends `[N]` to the titles of your
 
 **Pinned Tabs:**
 
-- `Cmd+Option+1` (Mac) or `Ctrl+Alt+1` (Windows/Linux) - Go to pinned tab 1
-- `Cmd+Option+2` through `Cmd+Option+9` - Go to pinned tabs 2-9
+- `Alt+1` - Go to pinned tab 1
+- `Alt+2` through `Alt+9` - Go to pinned tabs 2-9
 
 ## Demo
 

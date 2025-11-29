@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Keeping Tabs",
-  "version": "1.2",
+  "version": "1.3",
   "description": "Smart tab numbering and keyboard navigation for unpinned tabs",
   "author": "Vamshi Kodipaka",
   "homepage_url": "https://github.com/vamshi-ka/keeping-tabs",
@@ -77,39 +77,39 @@
       "description": "Go to unpinned tab 9"
     },
     "go-to-pinned-tab-1": {
-      "suggested_key": { "default": "Ctrl+Alt+1", "mac": "Command+Alt+1" },
+      "suggested_key": { "default": "Alt+1", "mac": "Alt+1" },
       "description": "Go to pinned tab 1"
     },
     "go-to-pinned-tab-2": {
-      "suggested_key": { "default": "Ctrl+Alt+2", "mac": "Command+Alt+2" },
+      "suggested_key": { "default": "Alt+2", "mac": "Alt+2" },
       "description": "Go to pinned tab 2"
     },
     "go-to-pinned-tab-3": {
-      "suggested_key": { "default": "Ctrl+Alt+3", "mac": "Command+Alt+3" },
+      "suggested_key": { "default": "Alt+3", "mac": "Alt+3" },
       "description": "Go to pinned tab 3"
     },
     "go-to-pinned-tab-4": {
-      "suggested_key": { "default": "Ctrl+Alt+4", "mac": "Command+Alt+4" },
+      "suggested_key": { "default": "Alt+4", "mac": "Alt+4" },
       "description": "Go to pinned tab 4"
     },
     "go-to-pinned-tab-5": {
-      "suggested_key": { "default": "Ctrl+Alt+5", "mac": "Command+Alt+5" },
+      "suggested_key": { "default": "Alt+5", "mac": "Alt+5" },
       "description": "Go to pinned tab 5"
     },
     "go-to-pinned-tab-6": {
-      "suggested_key": { "default": "Ctrl+Alt+6", "mac": "Command+Alt+6" },
+      "suggested_key": { "default": "Alt+6", "mac": "Alt+6" },
       "description": "Go to pinned tab 6"
     },
     "go-to-pinned-tab-7": {
-      "suggested_key": { "default": "Ctrl+Alt+7", "mac": "Command+Alt+7" },
+      "suggested_key": { "default": "Alt+7", "mac": "Alt+7" },
       "description": "Go to pinned tab 7"
     },
     "go-to-pinned-tab-8": {
-      "suggested_key": { "default": "Ctrl+Alt+8", "mac": "Command+Alt+8" },
+      "suggested_key": { "default": "Alt+8", "mac": "Alt+8" },
       "description": "Go to pinned tab 8"
     },
     "go-to-pinned-tab-9": {
-      "suggested_key": { "default": "Ctrl+Alt+9", "mac": "Command+Alt+9" },
+      "suggested_key": { "default": "Alt+9", "mac": "Alt+9" },
       "description": "Go to pinned tab 9"
     }
   }

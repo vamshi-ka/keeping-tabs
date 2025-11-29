@@ -12,7 +12,8 @@ let renumberDebounceTimer = null;
 
 // Function to strip existing number prefix from title
 function stripNumberPrefix(title) {
-  return title.replace(/^\[\d+\]\s*/, '');
+  // Remove both [N] and (N) prefixes
+  return title.replace(/^[\[\(]\d+[\]\)]\s*/, '');
 }
 
 // Function to navigate to a specific unpinned tab by number (1-9)
@@ -77,14 +78,14 @@ async function renumberTabs() {
   if (DEBUG) console.log(`[DEBUG] renumberTabs() called`);
   try {
     const tabs = await browser.tabs.query({ currentWindow: true });
+    const pinnedTabs = tabs.filter(tab => tab.pinned);
     const unpinnedTabs = tabs.filter(tab => !tab.pinned);
 
-    if (DEBUG) console.log(`[DEBUG] Renumbering ${unpinnedTabs.length} unpinned tabs`);
+    if (DEBUG) console.log(`[DEBUG] Renumbering ${pinnedTabs.length} pinned tabs and ${unpinnedTabs.length} unpinned tabs`);
 
-    // Number each unpinned tab (1-9 only)
-    unpinnedTabs.forEach((tab, index) => {
-      // Only number first 9 tabs
-      if (index < 9) {
+    // Helper function to number a tab with given style
+    const numberTab = (tab, index, maxCount, bracketStyle) => {
+      if (index < maxCount) {
         const number = index + 1;
 
         // Store original title if we haven't seen this tab before
@@ -94,7 +95,9 @@ async function renumberTabs() {
 
         // Get the original title (without any number prefix)
         const originalTitle = originalTitles.get(tab.id);
-        const numberedTitle = `[${number}] ${originalTitle}`;
+        const numberedTitle = bracketStyle === 'round'
+          ? `(${number}) ${originalTitle}`
+          : `[${number}] ${originalTitle}`;
 
         // Mark this tab as being updated
         updatingTitles.add(tab.id);
@@ -111,7 +114,7 @@ async function renumberTabs() {
           updatingTitles.delete(tab.id);
         });
       } else {
-        // Remove number from tabs beyond 9
+        // Remove number from tabs beyond the limit
         if (originalTitles.has(tab.id)) {
           const originalTitle = originalTitles.get(tab.id);
 
@@ -129,6 +132,16 @@ async function renumberTabs() {
           });
         }
       }
+    };
+
+    // Number pinned tabs with (N)
+    pinnedTabs.forEach((tab, index) => {
+      numberTab(tab, index, 9, 'round');
+    });
+
+    // Number unpinned tabs with [N]
+    unpinnedTabs.forEach((tab, index) => {
+      numberTab(tab, index, 9, 'square');
     });
   } catch (error) {
     console.error('Error renumbering tabs:', error);
